@@ -1,0 +1,21 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/microservices/customer/src",
+  "monorepo": true,
+  "root": "apps/microservices/customer",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/microservices/customer/tsconfig.app.json"
+  },
+  "projects": {
+    "customer": {
+      "type": "application",
+      "root": "apps/microservices/customer",
+      "entryFile": "main",
+      "sourceRoot": "apps/microservices/customer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/microservices/customer/tsconfig.app.json"
+      }
+    }
+  }
+}
