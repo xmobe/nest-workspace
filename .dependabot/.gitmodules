@@ -1,3 +1,0 @@
-[submodule "apps/microservices/customer"]
-	path = apps/microservices/customer
-	url = https://github.com/xmobe-com/customer
