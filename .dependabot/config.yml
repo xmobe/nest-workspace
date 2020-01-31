@@ -10,6 +10,8 @@ update_configs:
     allowed_updates:
       - match:
           update_type: "all"
+    default_reviewers:
+      - "quanganh206"
   - package_manager: "submodules"
     directory: "/"
     update_schedule: "daily"
