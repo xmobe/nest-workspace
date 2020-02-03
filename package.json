@@ -1,6 +1,6 @@
 {
   "name": "microservices-customer",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "",
   "author": "",
   "license": "MIT",
@@ -17,7 +17,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./apps/customer/apps/microservices/customer/test/jest-e2e.json"
+    "test:e2e": "jest --config ./apps/customer/apps/microservices/customer/test/jest-e2e.json",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@nestjs/common": "^6.7.2",
@@ -45,6 +46,7 @@
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",
     "@types/supertest": "^2.0.8",
+    "cz-conventional-changelog": "^3.1.0",
     "husky": "^4.2.1",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
@@ -54,7 +56,8 @@
     "ts-node": "^8.4.1",
     "tsconfig-paths": "^3.9.0",
     "tslint": "^5.20.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "semantic-release": "^17.0.2"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -82,5 +85,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xmobe-com/nest-workspace.git"
   }
 }
