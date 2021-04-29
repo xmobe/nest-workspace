@@ -1,0 +1,44 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  target-branch: master
+  reviewers:
+  - quanganh206
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: npm
+    versions:
+    - 6.14.11
+    - 6.14.12
+  - dependency-name: "@nestjs/schematics"
+    versions:
+    - 7.2.6
+    - 7.2.7
+    - 7.3.0
+  - dependency-name: husky
+    versions:
+    - 4.3.6
+    - 4.3.8
+    - 5.0.9
+    - 5.1.0
+    - 5.1.1
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+- package-ecosystem: gitsubmodule
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  target-branch: master
+  reviewers:
+  - quanganh206
+  labels:
+  - submodules
